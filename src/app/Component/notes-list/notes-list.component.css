@@ -1,0 +1,28 @@
+.hero-box {
+    background: #e9f7fd;
+    padding: 30px;
+    border: 2px solid #dde9ef;
+    margin: 12px auto 0 auto;
+    text-align: center;
+}
+
+.jumbotron{
+    background-color: #ede9fd;
+    padding: 30px ;
+    border: 2px solid #dde9ef;
+    margin: 30px 30px 30px 30px;
+    display: block;
+}
+
+.jumbotronn{
+    background-color: #ede9fd;
+    padding: 30px;
+    border: 2px solid #dde9ef;
+    margin: 30px 30px 30px 30px;
+    display: block;
+}
+
+.h4
+{
+   display: block;
+}

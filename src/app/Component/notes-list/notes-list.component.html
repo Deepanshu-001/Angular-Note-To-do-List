@@ -1,0 +1,21 @@
+<h1 style="text-align: center; margin-top: 22px;"> Todo List By Technophilia production</h1>
+<div class="container my-4">
+    <div class="jumbotron">
+        <app-add-todo (todoAdd)="addTodo($event)"></app-add-todo>
+    </div>
+</div>
+<div class="container my-4">
+    <div class="jumbotronn">
+        <h4> Your Todo Tasks</h4>
+        <div *ngIf="this.todos.length===0; else elseBlock">No Todo Task to Display</div>
+        <ng-template #elseBlock>
+            <div *ngFor="let todo of todos; index as i">
+                <app-notes-items [todo]="todo" [i]="i" (tododelete)="deleteTodo($event)"
+                    (todocheckbox)="toggleTodo($event)"></app-notes-items>
+
+                <!-- {{todo.sno}} -- {{todo.title}} -- {{todo.desc}} -->
+            </div>
+        </ng-template>
+    </div>
+
+</div>
